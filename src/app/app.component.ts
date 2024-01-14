@@ -9,8 +9,8 @@ import {COURSES} from '../db-data';
 })
 export class AppComponent {
 
-  courses = COURSES;
-
+  courses = [...COURSES];
+  
   onCourseSelected(course:Course) {
     console.log("app component - click event bubbled up... ", course)
   }
